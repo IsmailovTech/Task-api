@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+.main_card {
+  width: 207px;
+  height: 444px;
+  padding: 5px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.productss_img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_image {
+  width: 150px;
+}
+
+.product_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+
+.product_old_price {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    color: #525252;
+}
+
+
+.sdf{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.monthly_pay{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stars{
+    width: 100px;
+    margin-top: 15px;
+}
+
+.btns:hover{ 
+    background-color: rgb(127, 127, 205);
+}
+
+
+.product {
+    display: flex;
+    align-items: center;
+}
+span {
+    margin-left: 400px;
+}
+
+.btn_sp{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+@media only screen and(max-width: 400px) {
+    .btn_sp{
+        position: absolute;
+        left: -240px;
+    }
+  }
