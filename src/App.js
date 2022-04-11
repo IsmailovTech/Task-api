@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 // import Header from "./Components/Header/Header";
 import ProductList from "./Components/ProductsList/ProductList";
 import axios from 'axios'
+import Navbar from "./Components/Navbar/Navbar";
+import "./App.css"
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -18,12 +20,15 @@ const App = () => {
     })
   }
   return (
-    <div className="container">
-      {/* <Header/> */}
-      <ProductList title={"Новинки"} products={products.filter(product => product.status === 'new')}/>
-      <ProductList title={"Выбор покупателей"} span={<span onClick={() => setShow(!show)}>{!show ? "Смотреть все" : "Скрыть"}</span>} 
-      products={!show ? products?.slice(0, 6) : products}/>
-    </div>
+    <>
+        <Navbar />
+      <div className="container">
+        {/* <Header/> */}
+        <ProductList title={"Новинки"} products={products.filter(product => product.status === 'new')}/>
+        <ProductList title={"Выбор покупателей"} span={<span onClick={() => setShow(!show)}>{!show ? "Смотреть все" : "Скрыть"}</span>} 
+        products={!show ? products?.slice(0, 6) : products}/>
+      </div>
+    </>
   )
 }
 export default App;

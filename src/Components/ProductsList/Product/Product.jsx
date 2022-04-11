@@ -1,5 +1,6 @@
 import React from "react";
 import stars from "../../Assets/images/stars.svg"
+import "./Product.css"
 
 const Product = ({ product }) => {
   return (

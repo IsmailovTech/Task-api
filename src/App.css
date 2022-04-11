@@ -1,0 +1,45 @@
+@media only screen and (max-width: 400px) {
+  .main_navbar {
+    position: relative;
+    width: 400px;
+    padding: 0px 5px;
+    margin-bottom: 80px;
+  }
+
+  .search_input {
+    width: 60%;
+    margin-right: 20px;
+  }
+
+  #search {
+    width: 20%;
+  }
+  .icons_part {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+
+  .main_card {
+    width: 307px;
+    height: 480px;
+    padding: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px grey;
+    margin-left: 25px;
+  }
+
+  .productss_img {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product_name{
+      font-size: 22px;
+  }
+}
